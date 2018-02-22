@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp">
+
+    <LinearLayout
+        android:id="@+id/programDataParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/programImage"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="fill_parent"/>
+
+            <TextView
+                android:id="@+id/programName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/programImage"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/episodeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/programName"
+                android:layout_toRightOf="@id/programImage"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="4dp"
+                android:text="Episode: 3"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/networklogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/episodeNumber"
+                android:layout_toRightOf="@+id/episodeNumber"
+                android:layout_toEndOf="@+id/episodeNumber"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/videoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ratingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text="@string/parent_supervision_label"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/supervisionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ratingLabel"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/videoAirTimeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text="@string/video_airtime_label"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/videoAirTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/videoRatingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text="@string/video_rating_label"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/videoRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/videoTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text="Video Type"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/videoType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/movieLaunchButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/launch_video_label"
+            style="@style/videoLaunchButtonTheme"/>
+
+        <TextView
+            android:id="@+id/noItemSelecte"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:visibility="gone"
+            android:text="@string/no_item_selected_label"/>
+    </LinearLayout>
+</ScrollView>

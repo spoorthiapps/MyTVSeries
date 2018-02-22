@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XfinityTV</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="parent_supervision_label">Parent Supervision Required</string>
+    <string name="video_airtime_label">Video Air Time</string>
+    <string name="video_rating_label">Video Rating</string>
+    <string name="video_type_label">Video Type</string>
+    <string name="launch_video_label">LAUNCH VIDEO</string>
+    <string name="episode_label">Episode:</string>
+    <string name="yes_label">YES</string>
+    <string name="no_label">NO</string>
+    <string name="no_item_selected_label">NO ITEM SELECTED YET</string>
+    <string name="unable_to_get_data_dialog_error_msg">Unable to get the latest programs data.</string>
+    <string name="dialog_ok_button_label">OK</string>
+
+</resources>
